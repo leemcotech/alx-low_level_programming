@@ -1,24 +1,16 @@
-#include <stdio.h>
-
-
+#include "main.h"
 /**
- * main - program that prints the alphabet in lowercase and upper case
- *
- * Return: Always 0.
+ * _isalpha - Checks charcter
+ * @c: The charceter
+ * Return: 1 for all
  */
 
-int main(void)
+int _isalpha(int c)
+
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
+		return (1);
 	}
-
-	putchar('\n');
-
 	return (0);
 }
